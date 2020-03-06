@@ -35,6 +35,13 @@ $("a").on("click tap", function() {
   $popover.find(".body p").text(data[$popoverTarget].description);
 });
 
+$(document).keyup(function(e) {
+  e.preventDefault();
+  if (e.key === "Escape") {
+    $(".close").click();
+  }
+});
+
 $(".close").on("click tap", function() {
   $(".popover").addClass("closed");
 });

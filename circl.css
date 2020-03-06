@@ -29,7 +29,8 @@ h2 {
 
 /* Popover */
 .popover.closed {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .popover {
@@ -42,7 +43,9 @@ h2 {
   right: 0;
   bottom: 0;
   position: absolute;
-  transition: all 3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.2s linear;
 }
 
 .popover.item1 {
