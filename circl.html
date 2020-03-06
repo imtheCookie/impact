@@ -1,21 +1,72 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="circl.css">
-    <link rel="stylesheet" href="center-circle.css">
+    <link
+        rel="stylesheet"
+        href="circl.css"
+    >
+    <link
+        rel="stylesheet"
+        href="center-circle.css"
+    >
 </head>
 
 <body>
-    <span><span></span></span>
     <div class="container">
-        <a href="#" class='outer-circle-btn'><div></div></a>
-        <a href="#" class='outer-circle-btn'><div></div></a>
-        <a href="#" class='outer-circle-btn'><div></div></a>
-        <a href="#" class='outer-circle-btn'><div></div></a>
-        <a href="#" class='center-circle'><div></div></a>
+        <a
+            href="#"
+            class='outer-circle-btn'
+            data-target='0'
+        >
+            <div></div>
+        </a>
+        <a
+            href="#"
+            class='outer-circle-btn'
+            data-target='1'
+        >
+            <div></div>
+        </a>
+        <a
+            href="#"
+            class='outer-circle-btn'
+            data-target='2'
+        >
+            <div></div>
+        </a>
+        <a
+            href="#"
+            class='outer-circle-btn'
+            data-target='3'
+        >
+            <div></div>
+        </a>
+        <a
+            href="#"
+            class='center-circle'
+            data-target='4'
+        >
+            <div></div>
+        </a>
     </div><!-- /container -->
 
-    <script src="circl.js" type="text/javascript"></script>
+    <div
+        class="popover closed"
+        data-target-id=""
+    >
+        <div class="header"><span class="close">Close</span></div>
+        <div class="body">
+            <h2>title</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, cupiditate!</p>
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
 
 </body>
 

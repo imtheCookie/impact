@@ -10,10 +10,18 @@ var data = {
   2: {
     title: "title2",
     description: "lorem 2..."
+  },
+  3: {
+    title: "title2",
+    description: "lorem 2..."
+  },
+  4: {
+    title: "title2",
+    description: "lorem 2..."
   }
 };
 
-$("button").on("click tap", function() {
+$("a").on("click tap", function() {
   var $this = $(this),
     $popover = $(".popover"),
     $popoverTarget = $this.data("target");
