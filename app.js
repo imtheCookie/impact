@@ -15,10 +15,18 @@ var data = {
     title: "avatar",
     description: "yep yep",
     image: "assets/avatar.svg"
+  },
+  3: {
+    title: "title2",
+    description: "lorem 2..."
+  },
+  4: {
+    title: "title2",
+    description: "lorem 2..."
   }
 };
 
-$("button").on("click tap", function() {
+$("a").on("click tap", function () {
   var $this = $(this),
     $popover = $(".popover"),
     $popoverTarget = $this.data("target");
@@ -28,10 +36,10 @@ $("button").on("click tap", function() {
   $popover.find(".body h2").text(data[$popoverTarget].title);
   $popover.find(".body p").text(data[$popoverTarget].description);
   console.log($popover.find(".body .image"));
-  
-  $popover.find(".body .image").css('background-image','url('+data[$popoverTarget].image+')');
+
+  $popover.find(".body .image").css('background-image', 'url(' + data[$popoverTarget].image + ')');
 });
 
-$(".close").on("click tap", function() {
+$(".close").on("click tap", function () {
   $(".popover").addClass("closed");
 });
