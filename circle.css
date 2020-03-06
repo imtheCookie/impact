@@ -36,31 +36,31 @@ a {
 a:nth-child(1) {
   border-radius: 40vmin 0 0 0;
   transform-origin: 110% 110%;
-  transition: all 0.15s ease-out; 
   transition: transform .4s .15s;
+  transition: all 0.15s ease-out; 
 }
 
 a:nth-child(2) {
   border-radius: 0 40vmin 0 0;
   left: 52.5%;
-  transition: all 0.15s ease-out; 
   transform-origin: -10% 110%;
   transition: transform 0.4s 0.2s;
+  transition: all 0.15s ease-out; 
 }
 a:nth-child(3) {
   border-radius: 0 0 0 40vmin;
-  transition: all 0.15s ease-out; 
   top: 52.5%;
   transform-origin: 110% -10%;
   transition: transform 0.4s 0.25s;
+  transition: all 0.15s ease-out; 
 }
 a:nth-child(4) {
   border-radius: 0 0 40vmin 0;
-  transition: all 0.15s ease-out; 
   top: 52.5%;
   left: 52.5%;
   transform-origin: -10% -10%;
   transition: transform 0.4s 0.3s;
+  transition: all 0.15s ease-out; 
 }
 
 a:nth-child(1) div {
@@ -84,7 +84,7 @@ a:nth-child(3):hover,
 a:nth-child(2):hover,
 a:nth-child(1):hover {
   border-radius: 0;
-  transition: all 0.15s linear;
+  transition: all 0.15s ease-out;
 }
 
 span{
