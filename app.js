@@ -31,7 +31,6 @@ $("a").on("click tap", function() {
     $popoverTarget = $this.data("target");
 
   $popover.removeClass("closed");
-  $popover.attr("data-target-id", $popoverTarget);
   $popover.find(".body h2").text(data[$popoverTarget].title);
   $popover.find(".body p").text(data[$popoverTarget].description);
 });
