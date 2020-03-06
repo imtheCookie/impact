@@ -14,6 +14,11 @@ var data = {
     description:
       "Aliquam eget neque sapien. Vestibulum eu magna eu erat pretium lobortis. Praesent at velit id felis commodo ultrices. Sed fermentum iaculis consequat. Nunc vel eros vitae velit pellentesque dignissim et quis est. Donec fermentum augue id sem posuere, vitae auctor nunc commodo. Donec nulla leo, lobortis eget leo in, fringilla euismod nulla. Duis ornare pharetra pellentesque. In vitae rhoncus felis. Sed faucibus enim diam, ut luctus dolor porttitor nec. Integer sed tortor eleifend, fermentum lectus eu, hendrerit eros. Mauris cursus, orci in sodales feugiat, purus leo blandit lorem, et porttitor nisl erat ut tellus. Curabitur semper elementum ornare."
   },
+  avatar: {
+    title: "avatar",
+    description: "yep yep",
+    image: "assets/avatar.svg"
+  },
   3: {
     title: "Nam consectetur suscipit urna",
     description:
@@ -33,6 +38,11 @@ $("a").on("click tap", function() {
   $popover.removeClass("closed");
   $popover.find(".body h2").text(data[$popoverTarget].title);
   $popover.find(".body p").text(data[$popoverTarget].description);
+  console.log($popover.find(".body .image"));
+
+  $popover
+    .find(".body .image")
+    .css("background-image", "url(" + data[$popoverTarget].image + ")");
 });
 
 $(document).keyup(function(e) {
