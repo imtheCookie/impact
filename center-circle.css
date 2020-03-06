@@ -20,11 +20,39 @@ a div{
 }
 a:nth-child(1){
   border-radius:40vmin 0 0 0;
+}
+.container {
+  position: relative;
+  width: 80vmin;
+  height: 80vmin;
+  margin: 0 auto;
+}
+a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 47.5%;
+  height: 47.5%;
+  overflow: hidden;
+  /* transform:scale(.5) translateZ(0px); */
+  background: #585247;
+}
+a div {
+  height: 100%;
+  background-size: cover;
+  opacity: 0.5;
+  border-radius: inherit;
+}
+a:nth-child(1) {
+  border-radius: 40vmin 0 0 0;
   transform-origin: 110% 110%;
   transition:transform .4s .15s;
 }
 a:nth-child(1) div{
   background-image:url(./assets/abn-hq.jpg);
+}
+a:nth-child(1) div {
+  background-image: url(./assets/abn-hq.jpg);
 }
 a:nth-child(2){
   border-radius:0 40vmin 0 0;
@@ -91,4 +119,32 @@ span span:after, span span:before{
 }
 span span:after{
   top:1.5vmin;
+}
+
+a:nth-child(2) div {
+  background-image: url(./assets/logius-hq.jpg);
+}
+a:nth-child(3) {
+  border-radius: 0 0 0 40vmin;
+  top: 52.5%;
+  transform-origin: 110% -10%;
+}
+a:nth-child(3) div {
+  background-image: url(./assets/nike-hq.jpg);
+}
+
+a:nth-child(4) {
+  border-radius: 0 0 40vmin 0;
+  top: 52.5%;
+  left: 52.5%;
+  transform-origin: -10% -10%;
+}
+a:nth-child(4) div {
+  background-image: url(./assets/cap-hq.jpg);
+}
+a:nth-child(4):hover,
+a:nth-child(3):hover,
+a:nth-child(2):hover,
+a:nth-child(1):hover {
+  border-radius: 0;
 }
