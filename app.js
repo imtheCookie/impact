@@ -29,7 +29,7 @@ $("button").on("click tap", function() {
   $popover.find(".body p").text(data[$popoverTarget].description);
   console.log($popover.find(".body .image"));
   
-  $popover.find(".body .img")[0].style('background',data[$popoverTarget].image);
+  $popover.find(".body .image").css('background-image','url('+data[$popoverTarget].image+')');
 });
 
 $(".close").on("click tap", function() {
