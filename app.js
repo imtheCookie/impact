@@ -43,6 +43,13 @@ $("a").on("click tap", function () {
   $popover.find(".body .image").css('background-image', 'url(' + data[$popoverTarget].image + ')');
 });
 
-$(".close").on("click tap", function () {
+$(document).keyup(function(e) {
+  e.preventDefault();
+  if (e.key === "Escape") {
+    $(".close").click();
+  }
+});
+
+$(".close").on("click tap", function() {
   $(".popover").addClass("closed");
 });
