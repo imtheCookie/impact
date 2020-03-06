@@ -14,19 +14,15 @@ var data = {
     description:
       "Aliquam eget neque sapien. Vestibulum eu magna eu erat pretium lobortis. Praesent at velit id felis commodo ultrices. Sed fermentum iaculis consequat. Nunc vel eros vitae velit pellentesque dignissim et quis est. Donec fermentum augue id sem posuere, vitae auctor nunc commodo. Donec nulla leo, lobortis eget leo in, fringilla euismod nulla. Duis ornare pharetra pellentesque. In vitae rhoncus felis. Sed faucibus enim diam, ut luctus dolor porttitor nec. Integer sed tortor eleifend, fermentum lectus eu, hendrerit eros. Mauris cursus, orci in sodales feugiat, purus leo blandit lorem, et porttitor nisl erat ut tellus. Curabitur semper elementum ornare."
   },
-  avatar: {
-    title: "avatar",
-    description: "yep yep",
-    image: "assets/avatar.svg"
-  },
   3: {
     title: "Nam consectetur suscipit urna",
     description:
       "Nam consectetur suscipit urna, vel faucibus magna porttitor eget. Curabitur consequat ex quis odio consequat posuere. Quisque pulvinar sodales euismod. Pellentesque gravida lacus sed nisi vehicula, a scelerisque libero rhoncus. Sed bibendum sagittis risus vitae faucibus. Donec scelerisque neque sed ex laoreet, eu eleifend dolor ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent felis arcu, hendrerit eget risus ut, bibendum mollis erat."
   },
-  4: {
-    title: "title2",
-    description: "lorem 2..."
+  avatar: {
+    title: "avatar",
+    description: "yep yep",
+    image: "assets/avatar.svg"
   }
 };
 
