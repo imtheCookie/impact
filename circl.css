@@ -65,7 +65,7 @@ h2 {
   padding: 15px;
 }
 
-.popover .header .close img:hover {
+.popover .header .close:hover img {
   transform: rotate(180deg);
   transition: all 0.3s linear;
 }
